@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>Caixa Eletrônico</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <main>
+      <div class="main">
+        <header class="header">
+          <span id="span-nome-conta"></span>
+        </header>
+        <section>
+          <div class="content">
+            <div class="div-flex-row-space-between">
+              <article>
+                <div class="div-blue">
+                  <div><span>SALDO</span></div>
+                  <span class="f-44">R$</span> <span id="saldo" class="f-44"></span>
+                </div>
+              </article>
+              <article>
+                <div class="div-flex-column">
+                  <button class="div-blue" id="btn-toggle-form">
+                    <div><span class="f-34">SAQUE</span></div>
+                  </button>
+                  <div class="div-saque hidden">
+                    <form name="form-saque">
+                      <span>Valor:</span>
+                      <input type="number" id="valor-saque" name="valor-saque"/>
+                      <button type="button" id="btn-confirmar-saque">Confirmar</button>
+                    </form>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="extrato">
+              <span class="f-34">Extrato</span>
+              <div id="content-extrato">
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>Dinheiro disponível no caixa: <span id="span-dinheiro-caixa"></span></p>
+        </footer>
+      </div>
+    </main>
+    <!-- Scripts -->
+    <script src="scripts/Conta.js"></script>
+    <script src="scripts/Caixa.js"></script>
+    <script src="scripts/Acoes.js"></script>
+    <script src="scripts/Init.js"></script>
+  </body>
+</html>
